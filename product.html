@@ -11,31 +11,32 @@
     <title>Product Page</title>
   </head>
   <body>
-    <section class="navbar">
+    <section class="navbar" id="navbar">
       <div class="menu-items">
         <div class="logo">
-          <a href=""
+          <a href="#"
             ><img width="160px" src="./images/logo2.png" alt="logo"
           /></a>
         </div>
         <div class="menu">
-          <a href="">Home</a>
-          <a href="">Gifts</a>
-          <a href="">Shop</a>
-          <a href="">Sale</a>
-          <a href="">Stories</a>
+          <a href="#">Home</a>
+          <a href="#">Gifts</a>
+          <a href="#">Shop</a>
+          <a href="#">Sale</a>
+          <a href="#">Stories</a>
         </div>
         <div class="nav-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
       </div>
     </section>
 
     <section class="hero">
       <h1>Jewellery</h1>
+      <p class="hero-text">Our jewelry builds on a legacy of over 180 years of expert craftsmanship with beautifully designed necklaces and pendants, bracelets, rings and more. </p>
       <div class="hero-img">
         <div class="img-desc">
           <img src="./images/products/earing1.jpg" alt="earing" />
@@ -53,57 +54,287 @@
           <img src="./images/products/bracelet1.jpg" alt="bracelet" />
           <p class="img-text">Bracelet</p>
         </div>
+        
       </div>
     </section>
 
     <section class="product">
       <div class="filter">
         <p>Filter By:</p>
-        <div class="dropdown">
+        <div class="select-menu">
           <div class="select">
             <span class="selected">Category</span>
             <i class="fa-solid fa-caret-down"></i>
           </div>
-          <ul class="menu-drop">
-            <li>Earings</li>
-            <li>Necklace</li>
-            <li>Ring</li>
-            <li>Bracelet</li>
+          <ul class="options">
+            <li class="option">Earings</li>
+            <li class="option">Necklace</li>
+            <li class="option">Ring</li>
+            <li class="option">Bracelet</li>
           </ul>
         </div>
-        <div class="dropdown">
+        <div class="select-menu">
           <div class="select">
             <span class="selected">Price</span>
             <i class="fa-solid fa-caret-down"></i>
           </div>
-          <ul class="menu-drop">
-            <li>Rs.350 & Under</li>
-            <li>Rs.500 - Rs.1000</li>
-            <li>Rs.1000 & Over</li>
+          <ul class="options">
+            <li class="option">Rs.350 & Under</li>
+            <li class="option">Rs.500 - Rs.1000</li>
+            <li class="option">Rs.1000 & Over</li>
           </ul>
         </div>
       </div>
       <div class="all-product">
-        <img src="./images/products/earing2.jpg" alt="earing" />
-        <img src="./images/products/necklace2.jpg" alt="necklace" />
-        <img src="./images/products/bracelet2.jpg" alt="bracelet" />
-        <img src="./images/products/ring2.jpg" alt="ring" />
+        <div class="product-img">
+            <img  src="./images/products/bracelet2.jpg" alt="bracelet" />
+            <div class="slider1"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Beads Bracelet</p>
+            <p>Rs.600</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+          <img  src="./images/products/ring2.jpg" alt="ring" />
+          <div class="slider2"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Diamond Ring</p>
+            <p>Rs.1500</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+          <p class="new1">New</p>
+          <img  src="./images/products/earing7.jpg" alt="earing" />
+          <div class="slider3"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Hoop Earings</p>
+            <p>Rs.350</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+          <img  src="./images/products/necklace7.jpg" alt="necklace" />
+          <div class="slider4"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Hoop Necklace</p>
+            <p>Rs.500</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        
+        
+        <div class="product-img">
+          <img src="./images/products/bracelet3.jpg" alt="bracelet" />
+          <div class="slider5"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Butterfly Bracelet</p>
+            <p>Rs.390</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+          <img src="./images/products/necklace3.jpg" alt="necklace" />
+          <div class="slider6"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Heart Necklace</p>
+            <p>Rs.800</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+          <img src="./images/products/earing3.jpg" alt="earing" />
+          <div class="slider7"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Pearl Earings</p>
+            <p>Rs.400</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+          <p class="new3">New</p>
+          <img src="./images/products/ring3.jpg" alt="ring" />
+          <div class="slider8"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Gold Ring</p>
+            <p>Rs.250</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        
+        
+        <div class="product-img">
+          <img src="./images/products/bracelet4.jpg" alt="bracelet" />
+          <div class="slider9"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Silver Bracelet</p>
+            <p>Rs.1000</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+           <img src="./images/products/bracelet6.jpg" alt="bracelet" />
+           <div class="slider10"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Gold Bracelet</p>
+            <p>Rs.1300</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+          <img src="./images/products/earing4.jpg" alt="earing" />
+          <div class="slider11"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Stud Earings</p>
+            <p>Rs.700</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+           <img src="./images/products/necklace4.jpg" alt="necklace" />
+           <div class="slider12"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Gold Necklace</p>
+            <p>Rs.750</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-img">
+            <img src="./images/products/necklace5.jpg" alt="necklace" />
+            <div class="slider13"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Gold Heart Necklace</p>
+            <p>Rs.900</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+          <p class="new2">New</p>
+           <img src="./images/products/bracelet5.jpg" alt="bracelet" />
+           <div class="slider14"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Gold Butterfly Bracelet</p>
+            <p>Rs.850</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+           <img src="./images/products/ring6.jpg" alt="ring" />
+           <div class="slider15"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Platinum Ring</p>
+            <p>Rs.300</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-img">
+           <img src="./images/products/earing5.jpg" alt="earing" />
+           <div class="slider16"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="product-desc">
+            <p>GRAFF Green Bead Earings</p>
+            <p>Rs.1500</p>
+            <button class="hover-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
 
-        <img src="./images/products/bracelet3.jpg" alt="bracelet" />
-        <img src="./images/products/necklace3.jpg" alt="necklace" />
-        <img src="./images/products/earing3.jpg" alt="earing" />
-        <img src="./images/products/ring3.jpg" alt="ring" />
-
-        <img src="./images/products/bracelet4.jpg" alt="bracelet" />
-        <img src="./images/products/bracelet6.jpg" alt="bracelet" />
-        <img src="./images/products/earing4.jpg" alt="earing" />
-        <img src="./images/products/necklace4.jpg" alt="necklace" />
-
-        <img src="./images/products/necklace5.jpg" alt="necklace" />
-        <img src="./images/products/bracelet5.jpg" alt="bracelet" />
-        <img src="./images/products/ring6.jpg" alt="ring" />
-        <img src="./images/products/earing5.jpg" alt="earing" />
+      <div class="top">
+        <a href="#navbar">Back to Top</a>
+        <a href="#navbar"><i class="fa-solid fa-angles-up"></i></a>
       </div>
     </section>
+
+    <section class="gift">
+      <div class="gift-text">
+        <h1>The Art of Gifting</h1>
+        <p>
+          A gift from GRAFF is the ultimate way to express your love this
+          holiday season and beyond.
+        </p>
+      </div>
+      <div class="gift-img">
+        <div class="gift-desc">
+          <img src="./images/products/earing6.jpg" alt="earing" />
+          <p>Earings</p>
+          <a href="#">Shop now <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="gift-desc">
+          <img src="./images/products/ring7.jpg" alt="earing" />
+          <p>Ring</p>
+          <a href="#">Shop now <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="gift-desc">
+          <img src="./images/products/necklace6.jpg" alt="earing" />
+          <p>Necklace</p>
+          <a href="#">Shop now <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="gift-desc">
+          <img src="./images/products/bracelet7.jpg" alt="earing" />
+          <p>Bracelet</p>
+          <a href="#">Shop now <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promotion">
+      <div class="video-text">
+        <h1>A GRAFF Holiday Awaits</h1>
+        <p>This season, discover a place where every act of love is <span class="cel">celebrated.</span></p>
+      </div>
+      <div class="video">
+        <video width="1000px" loop autoplay muted>
+          <source src="./images/10667655-uhd_4096_2160_25fps.mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="border"></section>
+
+    <section class="footer">
+      <div class="footer-col">
+        <div class="services">
+          <div class="client-care">
+            <h4>Client Care</h3>
+              <a href="#">Contact Us</a>
+              <a href="#">Track Your Order</a>
+              <a href="#">Book an Appointment</a>
+              <a href="#">Gift Cards</a>
+              <a href="#">Product Care & Repair</a>
+              <a href="#">Shipping &Returns</a>
+          </div>
+          <div class="company">
+            <h4>Our Company</h3>
+              <a href="#">World of GRAFF</a>
+              <a href="#">Sustainability</a>
+              <a href="#">Tiffany Careers</a>
+              <a href="#">Find A Boutique</a>
+          </div>
+          <div class="sites">
+              <h4>GRAFF Policies</h3>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms Of Use</a>
+              <a href="#">Cookie Policy</a>
+              
+          </div>
+        </div>
+        <div class="media">
+          <h4>Latest from GRAFF</h4>
+          <p>Be the first to know about exciting new designs, <br> special events, store openings and much more.</p>
+          <input type="email" placeholder="Email">
+          <button>Sign up</button>
+          <div class="media-icon">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
