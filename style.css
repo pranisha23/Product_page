@@ -49,7 +49,15 @@ body {
   font-weight: 500;
   border-bottom: 3px solid #d4a361;
 }
-
+.menu .fa-xmark {
+  display: none;
+}
+.sidebar-line {
+  display: none;
+}
+.sidebar-icon {
+  display: none;
+}
 .nav-icon {
   display: flex;
   gap: 40px;
@@ -187,19 +195,23 @@ body {
   transform-origin: bottom left;
 }
 
-.select-menu .options {
-  width: 30%;
+.options {
+  width: 100%;
   align-items: center;
   position: absolute;
   list-style: none;
   padding: 1.5em 1em 1.5em;
   gap: 20px;
-  display: flex;
+  display: none;
   flex-direction: column;
   background: white;
   top: 41.7rem;
   z-index: 15;
-  display: none;
+  cursor: pointer;
+}
+
+.options.active {
+  display: flex;
 }
 
 .all-product {
@@ -553,6 +565,10 @@ body {
   .all-product {
     grid-auto-rows: 450px;
   }
+  .options {
+    width: 87%;
+    top: 38rem;
+  }
   .all-product img {
     height: 75%;
   }
@@ -621,6 +637,10 @@ body {
   .img-text {
     font-size: 14px;
     margin-left: 34%;
+  }
+  .options {
+    width: 82%;
+    top: 32rem;
   }
   .all-product {
     grid-template-columns: repeat(3, 1fr);
@@ -736,16 +756,55 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .menu {
-    display: none;
-  }
   .nav-icon {
     display: none;
+  }
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .sidebar-line {
+    display: block;
+    border: 1px solid #d4a361;
+  }
+  .sidebar-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
   .side-bar {
     margin-top: 3px;
     display: inline-block;
     cursor: pointer;
+  }
+
+  .menu a {
+    margin-left: 30px;
+    width: 100%;
+  }
+  .menu .close:hover {
+    border-bottom: none;
+  }
+  .menu.active {
+    display: flex;
+  }
+  .menu .fa-xmark {
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 45px;
+    display: block;
+    font-size: 20px;
   }
   .side-bar i {
     font-size: 22px;
@@ -769,6 +828,10 @@ body {
   .product {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .options {
+    width: 12%;
+    top: 30.5rem;
   }
   .filter {
     justify-content: space-between;
@@ -911,12 +974,16 @@ body {
 @media (max-width: 576px) {
   .navbar {
     margin-left: 20px;
+    margin-right: 22px;
+  }
+  .menu a {
+    font-size: 14px;
   }
   .side-bar {
-    margin-top: 4px;
+    margin-top: 3.8px;
   }
   .side-bar i {
-    font-size: 19px;
+    font-size: 18px;
   }
   .hero {
     margin-left: 1rem;
@@ -945,6 +1012,10 @@ body {
     margin-top: 70px;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .options {
+    width: 15%;
+    top: 23.5rem;
   }
   .filter p,
   .select-menu {
@@ -1081,7 +1152,10 @@ body {
   .product {
     margin-top: 65px;
   }
-
+  .options {
+    width: 18%;
+    top: 22.2rem;
+  }
   .all-product {
     grid-auto-rows: 280px;
   }
