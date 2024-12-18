@@ -68,6 +68,9 @@ body {
   text-decoration: none;
   color: black;
 }
+.nav-icon i {
+  font-size: 14px;
+}
 .side-bar {
   display: none;
 }
@@ -205,9 +208,14 @@ body {
   display: none;
   flex-direction: column;
   background: white;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
   top: 41.7rem;
   z-index: 15;
   cursor: pointer;
+}
+
+.option:hover {
+  border-bottom: 2px solid #d4a361;
 }
 
 .options.active {
@@ -244,17 +252,17 @@ body {
 }
 
 .new1 {
-  top: 97%;
+  top: 95.5%;
   left: 51.3%;
 }
 
 .new2 {
-  top: 302.8%;
+  top: 301.5%;
   left: 27.9%;
 }
 
 .new3 {
-  top: 165.8%;
+  top: 164.5%;
   left: 75%;
 }
 
@@ -403,25 +411,10 @@ body {
   margin-left: 8px;
   cursor: pointer;
   display: inline-block;
-  position: relative;
 }
 
-.gift-desc a::after {
-  content: '';
-  position: absolute;
-  width: 37%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 5.4rem;
-  background-color: #d4a361;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.gift-desc a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.gift-desc a:hover {
+  color: #b48a53;
 }
 
 .gift-desc a i {
@@ -559,11 +552,23 @@ body {
 
 /* media queries */
 @media (max-width: 1200px) {
+  .menu {
+    gap: 55px;
+  }
+  .nav-icon {
+    margin-top: 8.5px;
+    gap: 28px;
+  }
+  .hero {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .hero-img {
-    grid-auto-rows: 280px;
+    grid-auto-rows: 245px;
   }
   .all-product {
-    grid-auto-rows: 450px;
+    grid-auto-rows: 400px;
   }
   .options {
     width: 87%;
@@ -574,33 +579,51 @@ body {
   }
   .product-img:hover {
     border: 1.5px solid;
-    padding: 30px 30px 40px;
-    height: 440px;
+    padding: 25px 28px 40px;
+    height: 400px;
+  }
+  .product-desc p {
+    font-size: 16px;
   }
   .new1 {
-    top: 40.6%;
+    top: 83.5%;
     left: 51.5%;
   }
 
   .new2 {
-    top: 123.6%;
+    top: 249%;
     left: 28.2%;
   }
 
   .new3 {
-    top: 68.5%;
+    top: 139%;
     left: 75%;
   }
   .product-img .hover-btn {
-    font-size: 6.6px;
-    padding: 10px 77px 10px;
+    margin-top: 0.5px;
+    font-size: 13px;
+    padding: 10px 52px 10px;
     cursor: pointer;
   }
   .top {
     margin-top: 25px;
   }
+  .gift {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .gift-desc img {
+    height: 68%;
+  }
   video {
-    width: 770px;
+    width: 750px;
+  }
+  .video-text h1 {
+    font-size: 23.3px;
+  }
+
+  .video-text p {
+    font-size: 14px;
   }
 }
 
@@ -616,12 +639,13 @@ body {
     font-size: 13px;
   }
   .nav-icon {
+    margin-top: 5px;
     gap: 25px;
   }
   .hero {
     margin-top: 25px;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   .hero h1 {
     font-size: 22px;
@@ -632,7 +656,7 @@ body {
     margin-bottom: 35px;
   }
   .hero-img {
-    grid-auto-rows: 190px;
+    grid-auto-rows: 220px;
   }
   .img-text {
     font-size: 14px;
@@ -663,28 +687,28 @@ body {
     font-size: 16px;
   }
   .new1 {
-    top: 75%;
+    top: 78%;
     left: 67.4%;
   }
 
   .new2 {
-    top: 328%;
+    top: 331%;
     left: 37%;
   }
 
   .new3 {
-    top: 201.6%;
+    top: 205%;
     left: 37.5%;
   }
 
   .top {
-    margin-top: 5px;
+    margin-top: 0.1px;
   }
 
   .gift {
     margin-top: 3.5rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   .gift-text h1 {
     font-size: 22px;
@@ -692,6 +716,9 @@ body {
 
   .gift-text p {
     font-size: 13px;
+  }
+  .gift-desc img {
+    height: 65%;
   }
   .gift-desc p,
   a {
@@ -848,7 +875,7 @@ body {
   }
 
   .all-product img {
-    height: 85%;
+    height: 90%;
   }
   .new1,
   .new2,
@@ -871,20 +898,26 @@ body {
     left: 53%;
   }
   .product-img {
-    border: 1.5px solid;
-    padding: 25px 35px 95px;
+    border: 1.5px solid rgb(230, 230, 230);
+    border-radius: 6px;
+    box-shadow: -10px 10px 10px rgba(189, 189, 189, 0.1);
+    padding: 25px 33px 95px;
     height: 400px;
   }
   .product-img .hover-btn {
-    margin-top: 8px;
+    margin-top: 0.5px;
+    background: #d4a361;
     display: inline-block;
+  }
+  .product-desc {
+    gap: 5px;
   }
   .product-desc p {
     font-size: 15px;
   }
   .product-img:hover {
-    border: 1.5px solid;
-    padding: 25px 35px 95px;
+    border: 1.5px solid rgb(230, 230, 230);
+    padding: 25px 30px 95px;
     height: 400px;
   }
   .product-img:hover .new1,
@@ -895,6 +928,11 @@ body {
 
   .product-img:hover .hover-btn {
     display: inline-block;
+  }
+  .product-img .hover-btn {
+    margin-top: 4px;
+    font-size: 13px;
+    padding: 9px 55px 9px;
   }
   .top {
     margin-top: 28px;
@@ -1026,12 +1064,15 @@ body {
   }
 
   .all-product {
-    gap: 10px;
+    gap: 8px;
     grid-auto-rows: 300px;
   }
 
   .all-product img {
-    height: 65%;
+    height: 76%;
+  }
+  .product-desc {
+    gap: 6px;
   }
   .product-desc p {
     font-size: 12px;
@@ -1051,18 +1092,21 @@ body {
     left: 53%;
   }
   .product-img {
-    border: 1.5px solid;
+    border: 1.5px solid rgb(230, 230, 230);
+    border-radius: 6px;
+    box-shadow: -10px 10px 10px rgba(189, 189, 189, 0.1);
     padding: 20px 22px 45px;
     height: 300px;
   }
   .product-img:hover {
+    border: 1.5px solid rgb(230, 230, 230);
     padding: 20px 22px 45px;
     height: 300px;
   }
   .product-img .hover-btn {
-    margin-top: 8px;
+    margin-top: 0.5px;
     font-size: 10px;
-    padding: 9px 38px 9px;
+    padding: 8px 30px 8px;
   }
   .top a {
     font-size: 12px;
