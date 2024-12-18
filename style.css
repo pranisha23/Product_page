@@ -734,6 +734,7 @@ body {
 @media (max-width: 768px) {
   .navbar {
     display: flex;
+    justify-content: space-between;
   }
   .menu {
     display: none;
@@ -742,7 +743,6 @@ body {
     display: none;
   }
   .side-bar {
-    margin-left: 33.5rem;
     margin-top: 3px;
     display: inline-block;
     cursor: pointer;
@@ -913,7 +913,6 @@ body {
     margin-left: 20px;
   }
   .side-bar {
-    margin-left: 19.2rem;
     margin-top: 4px;
   }
   .side-bar i {
@@ -1066,7 +1065,6 @@ body {
 
 @media (max-width: 400px) {
   .side-bar {
-    margin-left: 11.5rem;
     margin-top: 8.9px;
   }
   .hero-text {
